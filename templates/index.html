@@ -14,7 +14,7 @@
             {% for task in task_list %}
                   <!-- ユーザ情報表示用のリンクを追加 -->
             <div>
-            <li>{{ task.taskname }}</li>]
+            <li>{{ task.taskname }}</li>
             <a href="{{url_for('detail_todo', task_id = task.id)}}">detail</a>
             <a href="{{url_for('edit_todo', task_id = task.id)}}">edit</a>
             
