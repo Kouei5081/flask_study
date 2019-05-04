@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>todoapp</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"  >
+    
+</head>
+<body>
+    <form action="{{url_for('update_todo', task_id = target_task.id)}}" method ='POST'>
+     <dt>ID</dt><dd>{{target_task.id}}</dd>
+     <dt>Taskname:</dt>
+     <dd><input type="text" size="30" name="taskname" value="{{target_task.taskname}}"></dd>
+     <dt>Description</dt>
+     <dd><input type="text" size="30" name="description" value="{{target_task.description}}"></dd>
+
+     <input type="submit" value="Submit">
+    
+    </form>
+</body>

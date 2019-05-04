@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>todoapp</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+<body>
+    <h1>detail</h1>
+    <dl class="show-task">
+        <dt>ID</dt><dd>{{target_task.id}}</dd>
+        <dt>Name</dt>
+        <dd>{{target_task.taskname}}</dd>
+        <dt>description</dt>
+        <dd>{{target_task.description}}</dd>
+    </dl>
+</body>

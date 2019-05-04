@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>todoapp</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+<body>
+    <h1>ADD user</h1>
+    <form action="{{ url_for('create_todo') }}" method="post" class ="new-task">
+        <label for="taskname">Name:</label>
+        <input type="text" size="30" id="taskname" name="taskname">
+        <label for="description">Description:</label>
+        <input type="text" size="30" id ="description" name="description">
+        <input type="submit" Value="Add">
+    </form>
+</body>
+</html>
